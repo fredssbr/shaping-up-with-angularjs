@@ -1,0 +1,32 @@
+Angular JS
+
+    A client-side JavaScript framework for adding interactivity to HTML.
+
+Directives
+
+    A directive is a marker on a HTML tag that tells Angular to run or reference some JavaScript code.
+    (bind the behaviour to the screen)
+
+Modules
+
+    Where we write pieces of our Angular Application. It makes our application more maintainable, readable, testable.
+    Where we also define dependencies for our apps.
+
+Expressions
+    
+    Allow you to insert dynamic values into your HTML
+
+Controllers
+    
+    Controllers are where we define our app's behaviour by defining functions and values
+    
+Filters
+    
+    Allows us to format data in an expression
+    {{data | filter:options}}
+
+NG-SRC:
+    
+    The code bellow would not work because the browser tries to load the image before the expression evaluates
+    <img src="{{product.images[0].url}}"> 
+    In order to avoid that, use a ng-src directive instead.
