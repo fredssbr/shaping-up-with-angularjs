@@ -30,3 +30,13 @@ NG-SRC:
     The code bellow would not work because the browser tries to load the image before the expression evaluates
     <img src="{{product.images[0].url}}"> 
     In order to avoid that, use a ng-src directive instead.
+
+DIRECTIVES:
+    
+    In order to avoid repetition of code, we usually want to include a different piece of file that could be used in more than one place.
+    For that, ng-include comes in handy. ng-include="'product-title.html'" < the name of the parameter is in between '' because ng-include expects a string variable to be passed in.
+    
+    In short, directives allow you to write HTML that expresses the behaviour of your web application.
+    Template-expanding directives are the simplest: define a custom tag that is expanded or replaced an can contain Controller logic.
+    
+    TIP: Use element directives for UI widgets and attribute directives for mixin behaviors, like a tooltip.
