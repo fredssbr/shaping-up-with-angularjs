@@ -7,10 +7,16 @@ Directives
     A directive is a marker on a HTML tag that tells Angular to run or reference some JavaScript code.
     (bind the behaviour to the screen)
 
-Modules
+MODULES
 
     Where we write pieces of our Angular Application. It makes our application more maintainable, readable, testable.
     Where we also define dependencies for our apps.
+    
+    HOW TO USE MODULES:
+    
+    Write modules based on functionality
+    app.js - top-level module attached via ng-app
+    products.js - all the functionality for products and only products (add as a dependency)
 
 Expressions
     
@@ -40,3 +46,12 @@ DIRECTIVES:
     Template-expanding directives are the simplest: define a custom tag that is expanded or replaced an can contain Controller logic.
     
     TIP: Use element directives for UI widgets and attribute directives for mixin behaviors, like a tooltip.
+
+
+SERVICES
+
+    Give the controller additional functionality like:
+        Requesting data from the server via $http service
+        Filtering an array with $filter
+    
+    Angular built-in services are prefixed by a dollar sign.
